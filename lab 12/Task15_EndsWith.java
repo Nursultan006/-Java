@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Task15_EndsWith {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите строку: ");
+        String text = scanner.nextLine();
+
+        System.out.print("Введите символ или окончание: ");
+        String suffix = scanner.nextLine();
+
+        boolean result = text.endsWith(suffix);
+
+        if (result) {
+            System.out.println("Строка заканчивается на это");
+        } else {
+            System.out.println("Строка не заканчивается на это");
+        }
+    }
+}
